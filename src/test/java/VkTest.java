@@ -19,8 +19,8 @@ public class VkTest {
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("device","Android");
         capabilities.setCapability(CapabilityType.BROWSER_NAME, "");
-        capabilities.setCapability(CapabilityType.VERSION, "4.2");
-        capabilities.setCapability(CapabilityType.PLATFORM, "MAC");
+        capabilities.setCapability(CapabilityType.VERSION, "21");
+        capabilities.setCapability(CapabilityType.PLATFORM, "");
         capabilities.setCapability("app", app.getAbsolutePath());
         capabilities.setCapability("app-package", "com.example.android.apis");
         capabilities.setCapability("app-activity", ".ApiDemos");
