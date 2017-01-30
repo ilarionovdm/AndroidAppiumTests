@@ -15,7 +15,7 @@ public class VkTest {
 
     @Before
     public void setUp() throws Exception {
-        File app = new File("C:\\", "VK_4_5_1.apk");
+        File app = new File("src/test/resources/VK_4_5_1.apk");
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("device","Android");
         capabilities.setCapability(CapabilityType.BROWSER_NAME, "");
