@@ -3,7 +3,7 @@ package source;
 import org.openqa.selenium.WebElement;
 
 /**
- * Created by Lion on 30.01.2017.
+ * TODO поменять на ConditionWaiter
  */
 public class ElementSearcher {
 
