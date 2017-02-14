@@ -10,11 +10,7 @@ import source.ElementSearcher;
  */
 public class VKMacroses {
 
-    public static AppiumDriver driver;
-
-    public static void initializeDriver() {
-        driver = Driver.INSTANCE.driver;
-    }
+    public static AppiumDriver driver = Driver.INSTANCE.driver;
 
     public static void login() {
         WebElement loginET = ElementSearcher.findElement(VKElements.AUTH_LOGIN.xpath);

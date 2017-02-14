@@ -24,8 +24,6 @@ public class VKTest extends BasicTest {
     @Test
     public void test(){
 
-        VKMacroses.initializeDriver();
-
         //вход в ВК (логин - пароль - Войти)
         VKMacroses.login();
 
