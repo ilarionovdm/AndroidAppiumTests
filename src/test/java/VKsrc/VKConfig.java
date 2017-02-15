@@ -8,9 +8,6 @@ import javax.xml.bind.annotation.XmlRootElement;
 import java.io.File;
 import java.net.URISyntaxException;
 
-/**
- * Created by Lion on 30.01.2017.
- */
 @XmlRootElement(name = "VKConfig")
 public class VKConfig {
 
@@ -27,7 +24,7 @@ public class VKConfig {
         }
     }
 
-    public static VKConfig instance;
+    private static VKConfig instance;
 
     public static VKConfig getInstance() {
         return instance;
@@ -39,7 +36,7 @@ public class VKConfig {
     @XmlElement(name = "password", required = true)
     private String password;
 
-    @XmlElement(name = "songName", required = false)
+    @XmlElement(name = "songName")
     private String songName;
 
     public String getLogin() {

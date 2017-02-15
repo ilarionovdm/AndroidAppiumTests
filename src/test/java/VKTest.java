@@ -43,7 +43,8 @@ public class VKTest extends BasicTest {
         tapElement(VKElements.FIGNYA_V_PRAVOM_VERHNEM_UGLU_V_MENU_AUDIO.xpath);
 
         //запиливаем название песни
-        ElementSearcher.findElement(VKElements.SEARCH.xpath).sendKeys(VKConfig.getInstance().getSongName());
+        //ElementSearcher.findElement(VKElements.SEARCH.xpath).sendKeys(VKConfig.getInstance().getSongName());
+        setText(VKElements.SEARCH.xpath, VKConfig.getInstance().getSongName());
 
         //скрываем клавиатуру
         Driver.getDriver().hideKeyboard();
