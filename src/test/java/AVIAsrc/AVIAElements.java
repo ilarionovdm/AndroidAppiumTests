@@ -12,7 +12,7 @@ public enum AVIAElements {
     SPISOK_OPERATOROV("//android.widget.Spinner[contains(@resource-id, 'spinner')]"),
     OPERATOR_OZON("//android.widget.TextView[contains(@text, 'OZON')]"),
     CHOISES("//android.view.View[contains(@content-desc, 'Варианты')]"),
-    FLAG_SUCCESS_LOAD_CHOOSE_PAGE("//*[contains(@content-desc, 'На соседние даты есть билеты')]"),
+    FLAG_SUCCESS_LOAD_CHOOSE_PAGE("//*[contains(@content-desc, 'соседние даты')]"),
     URAL_LINES_CHOISE("//*[contains(@content-desc, 'Уральские авиалинии')]"),
     CHOOSE_ANY_CHOISE("//*[contains(@content-desc, 'i')]"),
     BTN_CHOISE("//android.widget.Button[contains(@content-desc, 'выбрать вариант перелета')]"),

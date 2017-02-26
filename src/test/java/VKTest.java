@@ -28,16 +28,19 @@ public class VKTest extends BasicTest {
         VKMacroses.login();
 
         //проверяем, что загрузилось активити с Новостями
-        ElementSearcher.findElement(VKElements.ACTIVITY_NEWS.xpath);
-
+        waitTillAppear(VKElements.ACTIVITY_NEWS.xpath);
+        //waitTillAppear("//android.widget.LinearLayout[contains(@resource-id, 'post_profile_btn')]");
         //тап по верхнему левому углу(открытие меню)
-        Driver.getDriver().tap(1,75,75,1); //cheat
+        //Driver.getDriver().tap(1,75,75,3); //cheat
+        tapElement("//android.widget.ImageButton[ancestor::android.view.View[child::android.widget.Spinner]]");
 
+        //swipeToElementAndTryToTap(VKElements.MENU_AUDIO.xpath);
+        waitTillAppear(VKElements.MENU_AUDIO.xpath);
         //переход в аудиозаписи
         tapElement(VKElements.MENU_AUDIO.xpath);
 
         //проверка, что открыты аудиозаписи
-        ElementSearcher.findElement(VKElements.ACTIVITY_AUDIO.xpath);
+        waitTillAppear(VKElements.ACTIVITY_AUDIO.xpath);
 
         //клик по фигне справа в верхнем углу (открывает строку поиска)
         tapElement(VKElements.FIGNYA_V_PRAVOM_VERHNEM_UGLU_V_MENU_AUDIO.xpath);
@@ -48,6 +51,8 @@ public class VKTest extends BasicTest {
 
         //скрываем клавиатуру
         Driver.getDriver().hideKeyboard();
+
+        waitTillAppear(VKElements.FIRST_SONG.xpath);
 
         //открываем первую песню
         tapElement(VKElements.FIRST_SONG.xpath);

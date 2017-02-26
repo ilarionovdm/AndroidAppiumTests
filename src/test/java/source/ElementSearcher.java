@@ -16,4 +16,8 @@ public class ElementSearcher {
         return new WebDriverWait(Driver.getDriver(), 30).until(ExpectedConditions.presenceOfElementLocated(By.className(className)));
     }
 
+    public static WebElement findElement(String xpath, int time) {
+        return new WebDriverWait(Driver.getDriver(), time).until(ExpectedConditions.presenceOfElementLocated(By.xpath(xpath)));
+    }
+
 }
