@@ -33,7 +33,7 @@ public class VKTest extends BasicTest {
         //тап по верхнему левому углу(открытие меню)
         //Driver.getDriver().tap(1,75,75,3); //cheat
         tapElement("//android.widget.ImageButton[ancestor::android.view.View[child::android.widget.Spinner]]");
-
+        //
         //swipeToElementAndTryToTap(VKElements.MENU_AUDIO.xpath);
         waitTillAppear(VKElements.MENU_AUDIO.xpath);
         //переход в аудиозаписи
