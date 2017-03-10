@@ -1,3 +1,5 @@
+package tests;
+
 import VKsrc.VKConfig;
 import VKsrc.VKElements;
 import VKsrc.VKMacroses;

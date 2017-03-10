@@ -11,7 +11,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class BasicTest {
 
-    public static Logger log = Logger.getLogger(BasicTest.class);
+    public static final Logger log = Logger.getLogger(BasicTest.class);
 
     @After
     public void tearDown() throws Exception {

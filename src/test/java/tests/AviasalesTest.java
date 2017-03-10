@@ -1,4 +1,6 @@
-import AVIAsrc.AVIAElements;
+package tests;
+
+import Aviasrc.AVIAElements;
 import io.appium.java_client.android.AndroidDriver;
 import org.junit.Before;
 import org.junit.Test;

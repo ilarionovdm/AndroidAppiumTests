@@ -1,4 +1,4 @@
-package AVIAsrc;
+package Aviasrc;
 
 
 public enum AVIAElements {
