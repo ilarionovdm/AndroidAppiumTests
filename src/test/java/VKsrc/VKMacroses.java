@@ -3,9 +3,6 @@ package VKsrc;
 import static source.BasicTest.setText;
 import static source.BasicTest.tapElement;
 
-/**
- * Created by Lion on 30.01.2017.
- */
 public class VKMacroses {
 
     public static void login() {

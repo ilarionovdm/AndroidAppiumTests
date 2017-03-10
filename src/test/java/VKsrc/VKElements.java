@@ -1,8 +1,5 @@
 package VKsrc;
 
-/**
- * Created by Lion on 30.01.2017.
- */
 public enum VKElements {
 
     AUTH_LOGIN("//android.widget.EditText[contains(@resource-id, 'auth_login')]"),

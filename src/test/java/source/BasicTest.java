@@ -13,15 +13,13 @@ public class BasicTest {
 
     public static Logger log = Logger.getLogger(BasicTest.class);
 
-    private DesiredCapabilities capabilities;
-
     @After
     public void tearDown() throws Exception {
         Driver.getDriver().quit();
     }
 
     public DesiredCapabilities setCapability(String appPath) {
-        capabilities = new DesiredCapabilities();
+        DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("device","Android");
         capabilities.setCapability(CapabilityType.BROWSER_NAME, "");
         capabilities.setCapability(CapabilityType.VERSION, "21");
@@ -71,7 +69,7 @@ public class BasicTest {
                     return true;
             }
         } catch (Exception e) {
-
+            log.info("Элемент не возможно кликнуть, отсутствует на экране");
         }
         return false;
     }
